@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!------------------------------------------HEAD START------------------------------------------------>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quest Tracker</title>
+<link href="css/traQuestStyling.css" rel="stylesheet">
+<script src="javascript/traQuestScript.js"></script>
+</head>
+<!----------------------------------------------HEAD END-------------------------------------------------->
+<!----------------------------------------------BODY START------------------------------------------------>
+<body>
+<div class="header">
+  <h1>Quest Tracker</h1>
+</div>
+
+<div class="nav">
+  <a href="index.html">Home</a>
+  <a href="submitQuest.html">Submit a Quest</a>
+  <a href="rubric.html">Rubric</a>
+</div>
+
+<table id="table">
+  <tr>
+    <th>Quest Name</th>
+    <th>Quest Description</th>
+    <th>Reward</th>
+    <th>currency type</th>
+  </tr>
+  <!-- Add rows with quest information here -->
+  <tr>
+    <td>Hunt</td>
+    <td>Hunt a goblin warrior.</td>
+    <td id="currency">3</td>
+    <td id="currency">Gold</td>
+  </tr>
+  <tr>
+    <td>Explore</td>
+    <td>A new dungeon has been found and needs to be explored. Be Prepared for the unknown. </td>
+    <td id="amount">15</td>
+    <td id="currency">Gold</td>
+  </tr>
+  <tr>
+    <td>Collect</td>
+    <td>Weapon and armor smiths are in need of materials. Collect crytals and deliver them. </td>
+    <td id="amount">5</td>
+    <td id="currency">Gold</td>
+  </tr>
+  <tr>
+    <td>Exterminate</td>
+    <td>A goblin squadron has set up camp in a well traveled area. Clear the camp to allow travelers to continue their journeys.</td>
+    <td id="amount">15</td>
+    <td id="currency">Gold</td>
+  </tr>
+  <tr>
+    <td>Missing</td>
+    <td>An elven warrior has gone missing recently. Find her and report your findings.</td>
+    <td id="amount">20</td>
+    <td id="currency">Silver</td>
+  </tr>
+  <tr>
+    <td>Hunt</td>
+    <td>An ogre has been spotted in the forest. Hunt it and bring back proof of your success.</td>
+    <td id="amount">20</td>
+    <td id="currency">Gold</td>
+  </tr>
+</table>
+
+<div class="list-container">
+  <div class="quest-list">
+    <h3>Completed Quests</h3>
+    <ul>
+      <!-- Add completed quests here -->
+      <li>Exterminate</li>
+      <li>Defend the city</li>
+      <li>Escort the supplies</li>
+      <li>Explore the forest</li>
+      <li>Fish for a 3 foot salmon</li>
+    </ul>
+  </div>
+  <div class="quest-list">
+    <h3>Uncompleted Quests</h3>
+    <ul>
+      <!-- Add uncompleted quests here -->
+      <li>Obtain old gear</li>
+      <li>Locate missing explorer</li>
+      <li>Map out the ruins</li>
+      <li>Hunt for boar</li>
+      <li>Eliminate the wolves near the forest</li>
+    </ul>
+  </div>
+</div>
+</body>
+<!----------------------------------------------BODY END-------------------------------------------------->
+<!----------------------------------------------FOOTER START------------------------------------------------>
+<footer>
+<div class="footer">
+  Quest Tracker follows the section 508 Standards and WCAG 2.1 for web accessibility. If you require this content in another
+    format, <a href="mailto:JAmad0931@ung.edu">Contact us here.</a>
+  
+</div>
+</footer>  
+<!----------------------------------------------FOOTER END------------------------------------------------>
+</html>

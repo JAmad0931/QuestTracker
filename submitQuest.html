@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit a Quest</title>
+    <link href="css/traQuestStyling.css" rel="stylesheet">
+    <script src="javascript/traQuestScript.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Quest Tracker</h1>
+    </div>
+      
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="submitQuest.html">Submit a Quest</a>
+        <a href="rubric.html">Rubric</a>
+      </div>
+     
+      <div class="form-center">
+        <form onsubmit="checkForm()" method="POST" id="myForm" action="index.html">
+          <p>
+              <label for="questName">Quest Name:</label>
+              <input type="text" id="questName" name="questName">
+          </p>
+          <p>
+              <label for="questReward">Quest Reward:</label>
+              <input type="text" id="questReward" name="questReward">
+              <select name="currencyType" id="type">
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="copper">Copper</option>
+              </select>
+          </p>
+          <p>
+              <label for="questDesc">Quest Description:</label>      
+              <textarea name="questDesc" id="questDesc" rows="5" cols="50" placeholder="Description must have a minimum of 50 characters."></textarea>
+          </p>
+          <div class="center-button">
+            <button type="submit" id="validate" form="myForm">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+</body>
+<!----------------------------------------------FOOTER START------------------------------------------------>
+<footer>
+  <div class="footer">
+    Quest Tracker follows the section 508 Standards and WCAG 2.1 for web accessibility. If you require this content in another
+    format, <a href="mailto:JAmad0931@ung.edu">Contact us here.</a>
+  </div>
+  </footer>  
+  <!----------------------------------------------FOOTER END------------------------------------------------>
+</html>
